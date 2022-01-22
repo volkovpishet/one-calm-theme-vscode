@@ -4,6 +4,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Chalky",
     scope: [
+      "variable.other.enummember",
     ],
     settings: {
       foreground: colors.chalky,
@@ -12,12 +13,9 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Coral",
     scope: [
-      "keyword.operator.new",
-      "keyword",
+      "keyword.control",
       "markup.italic",
       "punctuation.definition.block.tag",
-      "storage.modifier",
-      "storage.type",
       "constant.other.character-class",
       "entity.name.tag",
       "support.type.property-name",
@@ -26,7 +24,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "punctuation.definition.list.end.markdown",
       "punctuation.definition.template-expression",
       "punctuation.section.embedded",
-      "variable.language.this",
       // Annotations
       "storage.type.annotation",
       "punctuation.definition.annotation",
@@ -42,7 +39,12 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "markup.underline.link",
       "string.regexp",
       "string.url",
-      "keyword.operator",
+      "keyword",
+      "storage.type",
+      "variable.language.this",
+      "keyword.control.import",
+      "keyword.control.export",
+      "storage.modifier",
     ],
     settings: {
       foreground: colors.cyan,
@@ -80,7 +82,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "punctuation.separator",
       "support.type.property-name.css",
       "variable.other.constant",
-      "variable.other.enummember",
     ],
     settings: {
       foreground: colors.ivory,
