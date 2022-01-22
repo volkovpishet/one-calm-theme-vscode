@@ -1,3 +1,9 @@
+enum Foo {
+  foo, bar,
+}
+
+const qwe = Foo.bar;
+
 module ModuleValidator {
   import checkChars = CharUtils.notWhiteSpace;
   export interface HasValidator<T> {
