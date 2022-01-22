@@ -2,7 +2,7 @@
     "name": "one-calm-theme",
     "displayName": "one-calm-theme",
     "description": "OneCalm theme for Visual Studio Code based on OneDark",
-    "version": "0.0.25",
+    "version": "0.0.26",
     "publisher": "volkovpishet",
     "author": "volkovpishet",
     "scripts": {
@@ -12,9 +12,9 @@
         "theme": "ts-node ./generator/index.ts",
         "theme:watch": "nodemon ./generator/index.ts",
         "ts": "tsc",
-        "watch": "npm run build -- --sourcemap --watch",
-        "vscode:prepublish": "npm run theme && npm run build -- --minify",
-        "vscode:package": "yarn vscode:prepublish && vsce package"
+        "watch": "yarn run build -- --sourcemap --watch",
+        "vscode:prepublish": "yarn run theme && npm run build -- --minify",
+        "vscode:package": "yarn run vscode:prepublish && vsce package"
     },
     "icon": "static/icon.png",
     "galleryBanner": {

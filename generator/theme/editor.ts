@@ -1,6 +1,6 @@
 const colors = {
   activeBorder: "#568af2",
-  background: "#25272e",
+  background: "#282C34",
   border: "#181a1f",
   darkBackground: "#1a1c21",
 }
