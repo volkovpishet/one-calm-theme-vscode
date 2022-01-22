@@ -44,7 +44,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "variable.language.this",
       "constant",
       "support.constant",
-      "keyword.operator",
     ],
     settings: {
       foreground: colors.cyan,
@@ -82,6 +81,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "punctuation.separator",
       "support.type.property-name.css",
       "variable.other.constant",
+      "keyword.operator",
     ],
     settings: {
       foreground: colors.ivory,
