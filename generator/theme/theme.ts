@@ -13,7 +13,9 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Coral",
     scope: [
-      "keyword.control",
+      "keyword",
+      "storage.type",
+      "storage.modifier",
       "markup.italic",
       "punctuation.definition.block.tag",
       "constant.other.character-class",
@@ -39,12 +41,10 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "markup.underline.link",
       "string.regexp",
       "string.url",
-      "keyword",
-      "storage.type",
       "variable.language.this",
-      "keyword.control.import",
-      "keyword.control.export",
-      "storage.modifier",
+      "constant",
+      "support.constant",
+      "keyword.operator",
     ],
     settings: {
       foreground: colors.cyan,
@@ -124,11 +124,9 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Whiskey",
     scope: [
-      "constant",
       "entity.other.attribute-name",
       "keyword.operator.quantifier.regexp",
       "markup.bold",
-      "support.constant",
       "variable.parameter",
       "variable.object.property",
       "meta.object-literal.key",
