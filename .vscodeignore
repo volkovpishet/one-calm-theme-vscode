@@ -1,0 +1,13 @@
+.github/
+.vscode/
+examples/
+generator/
+node_modules/
+dist/**/*.map
+src/
+.eslintignore
+.gitignore
+.prettierignore
+nodemon.json
+tsconfig.base.json
+tsconfig.json

@@ -1,0 +1,72 @@
+{
+    "name": "one-calm-theme",
+    "displayName": "one-calm-theme",
+    "description": "OneCalm theme for Visual Studio Code based on OneDark",
+    "version": "0.0.25",
+    "publisher": "volkovpishet",
+    "author": "volkovpishet",
+    "scripts": {
+        "build": "esbuild ./src/extension.ts --bundle --outfile=dist/main.js --external:vscode --format=cjs",
+        "format": "prettier --write .",
+        "lint": "eslint .",
+        "theme": "ts-node ./generator/index.ts",
+        "theme:watch": "nodemon ./generator/index.ts",
+        "ts": "tsc",
+        "watch": "npm run build -- --sourcemap --watch",
+        "vscode:prepublish": "npm run theme && npm run build -- --minify",
+        "vscode:package": "yarn vscode:prepublish && vsce package"
+    },
+    "icon": "static/icon.png",
+    "galleryBanner": {
+        "color": "#2d323b",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "license": "ISC",
+    "keywords": [
+        "one calm",
+        "one-calm",
+        "theme"
+    ],
+    "extensionKind": [
+        "ui",
+        "workspace"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "OneCalm",
+                "uiTheme": "vs-dark",
+                "path": "./themes/OneCalm-color-theme.json"
+            }
+        ]
+    },
+    "capabilities": {
+        "untrustedWorkspaces": {
+            "supported": true
+        },
+        "virtualWorkspaces": true
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.7",
+        "@babel/eslint-parser": "^7.16.5",
+        "@mskelton/eslint-config": "^7.1.0",
+        "@types/node": "^17.0.8",
+        "@types/vscode": "^1.63.1",
+        "@typescript-eslint/eslint-plugin": "^5.9.1",
+        "@typescript-eslint/parser": "^5.9.1",
+        "esbuild": "^0.14.11",
+        "eslint": "^8.6.0",
+        "eslint-plugin-sort": "^2.3.1",
+        "nodemon": "^2.0.15",
+        "prettier": "^2.5.1",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.4",
+        "vsce": "^2.6.3"
+    }
+}
