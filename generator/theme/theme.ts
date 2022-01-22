@@ -42,6 +42,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "markup.underline.link",
       "string.regexp",
       "string.url",
+      "keyword.operator",
     ],
     settings: {
       foreground: colors.cyan,
@@ -79,7 +80,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "punctuation.separator",
       "support.type.property-name.css",
       "variable.other.constant",
-      "keyword.operator",
       "variable.other.enummember",
     ],
     settings: {
