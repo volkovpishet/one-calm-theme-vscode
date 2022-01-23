@@ -1,3 +1,5 @@
+import { standardColors } from "./colors"
+
 const colors = {
   primaryBright: "#457dff",
   primary: "#568af2",
@@ -8,19 +10,12 @@ const colors = {
   darkBackground: "#242d35",
   lightForeground: "#e3f1ff9f",
   lightInactiveForeground: "#e3f1ff70",
+  lightBlindForeground: "#e3f1ff48",
   error: "#c24038",
   border: "#181a1f",
 }
 
-const theme = {
-  chalky: "#d4b497",
-  coral: "#e06c75",
-  cyan: "#62c1b3",
-  ivory: "#abb2bf",
-  malibu: "#61afef",
-  sage: "#98c379",
-  violet: "#b48eff",
-}
+const theme = standardColors;
 
 export const editorTokens = {
   "activityBar.activeBorder": colors.primary,
@@ -48,7 +43,6 @@ export const editorTokens = {
   "editor.wordHighlightBorder": "#7f848e",
   "editor.wordHighlightStrongBackground": "#abb2bf26",
   "editor.wordHighlightStrongBorder": "#7f848e",
-  "editorLineNumber.activeForeground": "#737984",
   "editorBracketMatch.background": "#ffffff0d",
   "editorBracketMatch.border": "#ffffff00",
   "editorCursor.background": "#ffffffc9",
@@ -61,7 +55,8 @@ export const editorTokens = {
   "editorIndentGuide.activeBackground": "#ffffff2e",
   "editorIndentGuide.background": "#ffffff10",
   "editorInlayHint.foreground": "#A0A0A0F0",
-  "editorLineNumber.foreground": "#495162",
+  "editorLineNumber.foreground": colors.lightBlindForeground,
+  "editorLineNumber.activeForeground": colors.lightInactiveForeground,
   "editorMarkerNavigation.background": colors.darkBackground,
   "editorRuler.foreground": "#abb2bf26",
   "editorSuggestWidget.background": colors.darkBackground,
