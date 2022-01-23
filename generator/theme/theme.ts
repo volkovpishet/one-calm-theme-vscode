@@ -26,6 +26,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "punctuation.definition.list.end.markdown",
       "punctuation.definition.template-expression",
       "punctuation.section.embedded",
+      "variable.language.this",
       // Annotations
       "storage.type.annotation",
       "punctuation.definition.annotation",
@@ -41,9 +42,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "markup.underline.link",
       "string.regexp",
       "string.url",
-      "variable.language.this",
-      "constant",
-      "support.constant",
     ],
     settings: {
       foreground: colors.cyan,
@@ -130,6 +128,8 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "variable.parameter",
       "variable.object.property",
       "meta.object-literal.key",
+      "constant",
+      "support.constant",
     ],
     settings: {
       foreground: colors.whiskey,
