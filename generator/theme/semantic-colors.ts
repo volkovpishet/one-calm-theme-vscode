@@ -4,6 +4,11 @@ export function getSemanticTokenColors(colors: Colors) {
   return {
     "property": colors.chalky,
     "property.declaration": colors.ivory,
+    // Constants
+    "boolean": colors.coral,
+    // Entity initialisation
+    "class.constructor": colors.violet,
+    "method.constructor": colors.violet,
     // Annotations
     "class.annotation": colors.coral,
     "property.annotation": colors.coral,
