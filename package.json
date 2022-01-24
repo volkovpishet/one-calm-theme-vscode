@@ -2,7 +2,7 @@
     "name": "one-calm-theme",
     "displayName": "one-calm-theme",
     "description": "OneCalm theme for Visual Studio Code based on OneDark",
-    "version": "0.0.48",
+    "version": "0.0.49",
     "publisher": "volkovpishet",
     "author": "volkovpishet",
     "scripts": {

@@ -36,6 +36,13 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Cyan",
     scope: [
+      // Keywords
+      "keyword.operator.comparison",
+      "keyword.operator.logical",
+      "keyword.operator.bitwise",
+      "keyword.operator.decrement",
+      "keyword.operator.increment",
+      // Other
       "constant.character.escape",
       "markup.underline.link",
       "string.regexp",
