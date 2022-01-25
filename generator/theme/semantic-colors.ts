@@ -7,6 +7,10 @@ export function getSemanticTokenColors(colors: Colors) {
     "source.interpolation": colors.ivory,
     // Constants
     "boolean": colors.coral,
+    // Entity, Type
+    "type": colors.malibu,
+    "class": colors.malibu,
+    "type.declaration": colors.malibu,
     // Entity initialisation
     "class.constructor": colors.violet,
     "method.constructor": colors.violet,

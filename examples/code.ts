@@ -15,7 +15,7 @@ module ModuleValidator {
   @decorator()
   class HasValidator implements HasValidator<String> {
     /* Processed values */
-    static validatedValue: Array<String> = ["", "aa"];
+    static validatedValue: Array<any> = ["", "aa"];
     private myValue: String;
 
     /**

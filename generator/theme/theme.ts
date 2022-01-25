@@ -16,7 +16,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "storage.modifier",
       "markup.italic",
       "punctuation.definition.block.tag",
-      "constant.other.character-class",
       "entity.name.tag",
       "support.type.property-name",
       "heading",
@@ -25,9 +24,16 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "punctuation.definition.template-expression",
       "punctuation.section.embedded",
       "variable.language.this",
+      "keyword.operator.expression.typeof",
+      "keyword.control.anchor", // Regex ^ etc
+      "keyword.operator.new",
+      // Type primitives such as "any", "dynamic"
+      "entity.name.type",
+      "support.type.primitive",
       // Annotations
       "storage.type.annotation",
       "punctuation.definition.annotation",
+      "meta.decorator",
     ],
     settings: {
       foreground: colors.coral,
@@ -42,10 +48,12 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "keyword.operator.bitwise",
       "keyword.operator.decrement",
       "keyword.operator.increment",
+      // Regex
+      "string.regexp",
+      "constant.other.character-class",
       // Other
       "constant.character.escape",
       "markup.underline.link",
-      "string.regexp",
       "string.url",
     ],
     settings: {
@@ -55,7 +63,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Malibu",
     scope: [
-      "entity.name.type",
       "entity.other.inherited-class",
       "keyword.other.type",
       "storage.modifier.import",
@@ -70,6 +77,12 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "support.class",
       "support.other.namespace",
       "support.type",
+      // Types, interfaces
+      "entity.name.type.class",
+      "entity.name.type.interface",
+      "entity.name.type.enum",
+      "entity.name.type.module",
+      "entity.name.type.parameter",
     ],
     settings: {
       foreground: colors.malibu,
@@ -84,8 +97,11 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "punctuation.separator",
       "support.type.property-name.css",
       "variable.other.constant",
-      "keyword.operator",
       "string.interpolated.expression",
+      // All operators (=>, "=", "() braces in arrow")
+      "keyword.operator",
+      "storage.type.function.arrow",
+      "meta.arrow",
     ],
     settings: {
       foreground: colors.ivory,
@@ -114,12 +130,13 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Violet",
     scope: [
-      "entity.name.function",
       "entity.other.attribute-name.id.css",
-      "meta.function-call.generic",
       "string.other.link",
-      "support.function",
       "variable.language.super",
+      // Functions
+      "entity.name.function",
+      "meta.function-call",
+      "support.function",
     ],
     settings: {
       foreground: colors.violet,
@@ -137,6 +154,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "meta.object-literal.key",
       "constant",
       "support.constant",
+      "variable.other.jsdoc",
     ],
     settings: {
       foreground: colors.whiskey,
