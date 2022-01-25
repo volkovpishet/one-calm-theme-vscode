@@ -4,6 +4,7 @@ export function getSemanticTokenColors(colors: Colors) {
   return {
     "property": colors.chalky,
     "property.declaration": colors.ivory,
+    "source.interpolation": colors.ivory,
     // Constants
     "boolean": colors.coral,
     // Entity initialisation

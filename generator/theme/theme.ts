@@ -85,6 +85,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "support.type.property-name.css",
       "variable.other.constant",
       "keyword.operator",
+      "string.interpolated.expression",
     ],
     settings: {
       foreground: colors.ivory,

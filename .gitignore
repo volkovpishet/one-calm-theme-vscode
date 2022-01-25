@@ -3,3 +3,7 @@ dist/
 themes/*
 *.vsix
 .vscode
+
+# Idea related
+.idea
+*.iml
