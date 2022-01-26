@@ -134,4 +134,11 @@ export const editorTokens = {
   "titleBar.border": colors.border,
   "titleBar.inactiveBackground": colors.darkBackground,
   "titleBar.inactiveForeground": colors.lightInactiveForeground,
+  // Brackets and lines colors
+  "editorBracketHighlight.foreground1": theme.malibu,
+  "editorBracketHighlight.foreground2": theme.violet,
+  "editorBracketHighlight.foreground3": theme.cyan,
+  "editorBracketHighlight.foreground4": theme.malibu,
+  "editorBracketHighlight.foreground5": theme.violet,
+  "editorBracketHighlight.foreground6": theme.cyan,
 }
