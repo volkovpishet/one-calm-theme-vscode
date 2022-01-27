@@ -30,10 +30,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       // Type primitives such as "any", "dynamic"
       "entity.name.type",
       "support.type.primitive",
-      // Annotations
-      "storage.type.annotation",
-      "punctuation.definition.annotation",
-      "meta.decorator",
     ],
     settings: {
       foreground: colors.coral,
@@ -51,6 +47,10 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       // Regex
       "string.regexp",
       "constant.other.character-class",
+      // Annotations
+      "storage.type.annotation",
+      "punctuation.definition.annotation",
+      "meta.decorator",
       // Other
       "constant.character.escape",
       "markup.underline.link",

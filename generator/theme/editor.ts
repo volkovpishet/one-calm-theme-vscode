@@ -1,3 +1,5 @@
+import { applyAlphaToColor } from '../utils';
+
 import { standardColors } from "./colors"
 
 const colors = {
@@ -44,7 +46,7 @@ export const editorTokens = {
   "editor.wordHighlightStrongBackground": "#abb2bf26",
   "editor.wordHighlightStrongBorder": "#7f848e",
   "editorBracketMatch.background": "#ffffff0d",
-  "editorBracketMatch.border": "#ffffff00",
+  "editorBracketMatch.border": applyAlphaToColor(theme.ivory, 0.5),
   "editorCursor.background": "#ffffffc9",
   "editorCursor.foreground": colors.primaryBright,
   "editorError.foreground": colors.error,
@@ -141,4 +143,5 @@ export const editorTokens = {
   "editorBracketHighlight.foreground4": theme.malibu,
   "editorBracketHighlight.foreground5": theme.violet,
   "editorBracketHighlight.foreground6": theme.cyan,
+  "dart.closingLabels": applyAlphaToColor(theme.stone, 0.7),
 }
