@@ -3,7 +3,13 @@ import { Colors, TokenGroup } from "../models"
 export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Chalky",
-    scope: [],
+    scope: [
+      "entity.other.attribute-name",
+      "variable.other.enummember",
+      "variable.parameter",
+      "variable.object.property",
+      "meta.object-literal.key",
+    ],
     settings: {
       foreground: colors.chalky,
     },
@@ -145,13 +151,8 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Whiskey",
     scope: [
-      "entity.other.attribute-name",
       "keyword.operator.quantifier.regexp",
       "markup.bold",
-      "variable.other.enummember",
-      "variable.parameter",
-      "variable.object.property",
-      "meta.object-literal.key",
       "constant",
       "support.constant",
       "variable.other.jsdoc",
