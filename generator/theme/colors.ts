@@ -10,5 +10,5 @@ export const standardColors: Colors = {
   sage: "#98c379",
   stone: "#5c6370",
   violet: "#c490ff",
-  whiskey: "#d19a66",
+  whiskey: "#ebaa6d",
 }
