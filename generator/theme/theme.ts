@@ -5,7 +5,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
     name: "Chalky",
     scope: [
       "entity.other.attribute-name",
-      "variable.other.enummember",
       "variable.parameter",
       "variable.object.property",
       "meta.object-literal.key",
@@ -156,6 +155,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "keyword.operator.quantifier.regexp",
       "markup.bold",
       "variable.other.jsdoc",
+      "variable.other.enummember",
     ],
     settings: {
       foreground: colors.whiskey,
