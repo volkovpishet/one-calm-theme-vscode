@@ -3,9 +3,9 @@ import { Colors } from "../models"
 export function getSemanticTokenColors(colors: Colors) {
   return {
     "property": colors.whiskey,
-    "property.declaration": colors.ivory,
-    "source.interpolation": colors.ivory,
+    "property.declaration": colors.whiskey,
     "variable": colors.cyan,
+    "source.interpolation": colors.ivory, // variables in Strings
     // Entity, Type
     "type": colors.malibu,
     "class": colors.malibu,

@@ -3,11 +3,7 @@ import { Colors, TokenGroup } from "../models"
 export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Chalky",
-    scope: [
-      // Numbers, booleans
-      "constant",
-      "support.constant",
-    ],
+    scope: [],
     settings: {
       foreground: colors.chalky,
     },
@@ -111,6 +107,9 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "variable.parameter",
       "variable.object.property",
       "meta.object-literal.key",
+      // Numbers, booleans
+      "constant",
+      "support.constant",
     ],
     settings: {
       foreground: colors.ivory,
