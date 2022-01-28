@@ -35,9 +35,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "keyword.operator.expression.typeof",
       "keyword.control.anchor", // Regex ^ etc
       "keyword.operator.new",
-      // Type primitives such as "any", "dynamic"
-      "entity.name.type",
-      "support.type.primitive",
     ],
     settings: {
       foreground: colors.coral,
@@ -91,6 +88,9 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "entity.name.type.enum",
       "entity.name.type.module",
       "entity.name.type.parameter",
+      // Type primitives such as "any", "dynamic"
+      "entity.name.type",
+      "support.type.primitive",
     ],
     settings: {
       foreground: colors.malibu,
