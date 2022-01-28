@@ -9,6 +9,8 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "variable.parameter",
       "variable.object.property",
       "meta.object-literal.key",
+      "constant",
+      "support.constant",
     ],
     settings: {
       foreground: colors.chalky,
@@ -153,8 +155,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
     scope: [
       "keyword.operator.quantifier.regexp",
       "markup.bold",
-      "constant",
-      "support.constant",
       "variable.other.jsdoc",
     ],
     settings: {
