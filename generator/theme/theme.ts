@@ -4,10 +4,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Chalky",
     scope: [
-      "entity.other.attribute-name",
-      "variable.parameter",
-      "variable.object.property",
-      "meta.object-literal.key",
+      // Numbers, booleans
       "constant",
       "support.constant",
     ],
@@ -42,19 +39,9 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Cyan",
     scope: [
-      // Keywords
-      "keyword.operator.comparison",
-      "keyword.operator.logical",
-      "keyword.operator.bitwise",
-      "keyword.operator.decrement",
-      "keyword.operator.increment",
       // Regex
       "string.regexp",
       "constant.other.character-class",
-      // Annotations
-      "storage.type.annotation",
-      "punctuation.definition.annotation",
-      "meta.decorator",
       // Other
       "constant.character.escape",
       "markup.underline.link",
@@ -87,7 +74,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "entity.name.type.enum",
       "entity.name.type.module",
       "entity.name.type.parameter",
-      // Type primitives such as "any", "dynamic"
+      // Type primitives such as number, string in TS
       "entity.name.type",
       "support.type.primitive",
     ],
@@ -109,6 +96,21 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "keyword.operator",
       "storage.type.function.arrow",
       "meta.arrow",
+      // Keywords
+      "keyword.operator.comparison",
+      "keyword.operator.logical",
+      "keyword.operator.bitwise",
+      "keyword.operator.decrement",
+      "keyword.operator.increment",
+      // Annotations
+      "storage.type.annotation",
+      "punctuation.definition.annotation",
+      "meta.decorator",
+      // Object properties, function params
+      "entity.other.attribute-name",
+      "variable.parameter",
+      "variable.object.property",
+      "meta.object-literal.key",
     ],
     settings: {
       foreground: colors.ivory,

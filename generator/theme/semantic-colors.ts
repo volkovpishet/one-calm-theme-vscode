@@ -13,8 +13,8 @@ export function getSemanticTokenColors(colors: Colors) {
     "class.constructor": colors.violet,
     "method.constructor": colors.violet,
     // Annotations
-    "class.annotation": colors.cyan,
-    "property.annotation": colors.cyan,
-    "annotation": colors.cyan,
+    "class.annotation": colors.ivory,
+    "property.annotation": colors.ivory,
+    "annotation": colors.ivory,
   }
 }
