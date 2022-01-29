@@ -2,13 +2,13 @@ import { Colors } from "../models"
 
 export const standardColors: Colors = {
   chalky: "#d3b297",
-  coral: "#cf7575",
-  cyan: "#56B6C2",
-  error: "#f44747",
-  ivory: "#aeb7c8",
-  malibu: "#5ab5ff",
-  sage: "#98c379",
-  stone: "#5c6370",
-  violet: "#B48EFF",
-  whiskey: "#d4a274",
+  coral: "#f08585",
+  cyan: "#80cfc1",
+  error: "#f95e5e",
+  ivory: "#BFC9DA",
+  malibu: "#7fc1f7",
+  sage: "#99D46F",
+  stone: "#727b89",
+  violet: "#bf9ffe",
+  whiskey: "#eaa768",
 }

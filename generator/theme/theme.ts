@@ -23,7 +23,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "punctuation.definition.list.end.markdown",
       "punctuation.definition.template-expression",
       "punctuation.section.embedded",
-      "variable.language.this",
+      "variable.language",
       "keyword.operator.expression.typeof",
       "keyword.control.anchor", // Regex ^ etc
       "keyword.operator.new",
