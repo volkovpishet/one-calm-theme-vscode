@@ -7,7 +7,7 @@ export const standardColors: Colors = {
   error: "#f95e5e",
   ivory: "#BFC9DA",
   malibu: "#7fc1f7",
-  sage: "#99D46F",
+  sage: "#a7d984",
   stone: "#727b89",
   violet: "#bf9ffe",
   whiskey: "#eaa768",
