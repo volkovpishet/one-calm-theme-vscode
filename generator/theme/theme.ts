@@ -3,7 +3,11 @@ import { Colors, TokenGroup } from "../models"
 export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Chalky",
-    scope: [],
+    scope: [
+      // Numbers, booleans
+      "constant",
+      "support.constant",
+    ],
     settings: {
       foreground: colors.chalky,
     },
@@ -88,28 +92,19 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "support.type.property-name.css",
       "variable.other.constant",
       "string.interpolated.expression",
-      // All operators (=>, "=", "() braces in arrow")
+      // All keywords + Arrow operators (=>, "=", "() braces in arrow")
       "keyword.operator",
       "storage.type.function.arrow",
       "meta.arrow",
-      // Keywords
-      "keyword.operator.comparison",
-      "keyword.operator.logical",
-      "keyword.operator.bitwise",
-      "keyword.operator.decrement",
-      "keyword.operator.increment",
-      // Annotations
-      "storage.type.annotation",
-      "punctuation.definition.annotation",
-      "meta.decorator",
       // Object properties, function params
       "entity.other.attribute-name",
       "variable.parameter",
       "variable.object.property",
       "meta.object-literal.key",
-      // Numbers, booleans
-      "constant",
-      "support.constant",
+      // Annotations
+      "storage.type.annotation",
+      "punctuation.definition.annotation",
+      "meta.decorator",
     ],
     settings: {
       foreground: colors.ivory,
@@ -145,6 +140,12 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "entity.name.function",
       "meta.function-call",
       "support.function",
+      // Keyword operators
+      "keyword.operator.comparison",
+      "keyword.operator.logical",
+      "keyword.operator.bitwise",
+      "keyword.operator.decrement",
+      "keyword.operator.increment",
     ],
     settings: {
       foreground: colors.violet,

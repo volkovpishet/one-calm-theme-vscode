@@ -1,7 +1,7 @@
 import { Colors } from "../models"
 
 export const standardColors: Colors = {
-  chalky: "#d3b297",
+  chalky: "#e2c08d",
   coral: "#f08585",
   cyan: "#80cfc1",
   error: "#f95e5e",
