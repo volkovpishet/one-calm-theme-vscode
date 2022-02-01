@@ -46,6 +46,11 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "constant.character.escape",
       "markup.underline.link",
       "string.url",
+      // Object properties, function params
+      "entity.other.attribute-name",
+      "variable.parameter",
+      "variable.object.property",
+      "meta.object-literal.key",
     ],
     settings: {
       foreground: colors.cyan,
@@ -96,11 +101,6 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "keyword.operator",
       "storage.type.function.arrow",
       "meta.arrow",
-      // Object properties, function params
-      "entity.other.attribute-name",
-      "variable.parameter",
-      "variable.object.property",
-      "meta.object-literal.key",
       // Annotations
       "storage.type.annotation",
       "punctuation.definition.annotation",

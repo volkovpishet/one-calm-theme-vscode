@@ -5,7 +5,7 @@ export function getSemanticTokenColors(colors: Colors) {
     "property": colors.whiskey,
     "property.declaration": colors.whiskey,
     // Variables
-    "variable": colors.cyan,
+    "variable": colors.ivory,
     // String interpolation
     "source.interpolation": colors.ivory, // variables in Strings
     // Entity, Type
