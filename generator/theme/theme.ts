@@ -4,9 +4,11 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   {
     name: "Chalky",
     scope: [
-      // Numbers, booleans
-      "constant",
-      "support.constant",
+      "markup.inline",
+      "markup.quote",
+      "source.ini",
+      "string.other.link.description",
+      "string",
     ],
     settings: {
       foreground: colors.chalky,
@@ -112,13 +114,7 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
   },
   {
     name: "Sage",
-    scope: [
-      "markup.inline",
-      "markup.quote",
-      "source.ini",
-      "string.other.link.description",
-      "string",
-    ],
+    scope: [],
     settings: {
       foreground: colors.sage,
     },
@@ -158,6 +154,9 @@ export const getStandardTokens = (colors: Colors): TokenGroup[] => [
       "markup.bold",
       "variable.other.jsdoc",
       "variable.other.enummember",
+      // Numbers, booleans
+      "constant",
+      "support.constant",
     ],
     settings: {
       foreground: colors.whiskey,
