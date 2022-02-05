@@ -2,7 +2,7 @@
     "name": "one-calm-theme",
     "displayName": "OneCalm theme",
     "description": "OneCalm theme for Visual Studio Code based on famous One Dark theme from Atom",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "publisher": "volkovpishet",
     "author": "volkovpishet",
     "repository": {
@@ -36,6 +36,10 @@
     "keywords": [
         "one calm",
         "one-calm",
+        "theme",
+        "dart",
+        "flutter",
+        "semantic",
         "theme"
     ],
     "extensionKind": [
