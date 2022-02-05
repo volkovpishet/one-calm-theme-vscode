@@ -1,8 +1,8 @@
 {
     "name": "one-calm-theme",
     "displayName": "OneCalm theme",
-    "description": "OneCalm theme for Visual Studio Code based on famous One Dark theme from Atom",
-    "version": "0.2.1",
+    "description": "Dark theme for VS Code with calm colors",
+    "version": "0.2.2",
     "publisher": "volkovpishet",
     "author": "volkovpishet",
     "repository": {
