@@ -1,10 +1,14 @@
 {
     "name": "one-calm-theme",
-    "displayName": "one-calm-theme",
-    "description": "OneCalm theme for Visual Studio Code based on OneDark",
+    "displayName": "OneCalm theme",
+    "description": "OneCalm theme for Visual Studio Code based on famous One Dark theme from Atom",
     "version": "0.1.9",
     "publisher": "volkovpishet",
     "author": "volkovpishet",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/volkovpishet/one-calm-theme-vscode"
+    },
     "scripts": {
         "build": "esbuild ./src/extension.ts --bundle --outfile=dist/main.js --external:vscode --format=cjs",
         "format": "prettier --write .",
@@ -14,7 +18,8 @@
         "ts": "tsc",
         "watch": "yarn run build -- --sourcemap --watch",
         "vscode:prepublish": "yarn run theme && npm run build -- --minify",
-        "vscode:package": "yarn run vscode:prepublish && vsce package"
+        "vscode:package": "yarn run vscode:prepublish && vsce package",
+        "vscode:publish": "yarn run vscode:package && vsce publish"
     },
     "icon": "static/icon.png",
     "galleryBanner": {
