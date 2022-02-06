@@ -2,7 +2,7 @@
     "name": "one-calm-theme",
     "displayName": "OneCalm theme",
     "description": "Dark theme for VS Code with calm colors",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "publisher": "volkovpishet",
     "author": "volkovpishet",
     "repository": {
@@ -34,13 +34,19 @@
     ],
     "license": "ISC",
     "keywords": [
-        "one calm",
-        "one-calm",
+        "one",
+        "dark",
         "theme",
+        "night",
+        "semantic",
         "dart",
         "flutter",
-        "semantic",
-        "theme"
+        "onedark",
+        "dracula",
+        "darcula",
+        "material",
+        "calm",
+        "one-calm"
     ],
     "extensionKind": [
         "ui",
